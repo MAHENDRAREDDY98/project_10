@@ -1,0 +1,65 @@
+.navbar {
+    height: 80px !important;
+    background: $black;
+}
+
+.navbar-brand img {
+    height: 25px;
+}
+
+nav .active>.nav-link {
+    color: $green !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: all .25s;
+}
+
+.header-banner {
+    height: 500px;
+    background: url('../images/banner-headings/banner-img-min.jpg');
+    background-size: cover;
+    background-attachment: $bg-attachment;
+    background-position-y: -200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+        background-position-y: 0;
+    }
+
+    &__icons {
+        position: absolute;
+        bottom: 0;
+        right: 150px;
+        height: 360px;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    &__text {
+        color: white;
+
+        &__h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 60px;
+            margin-bottom: 0px;
+
+        }
+
+        &__p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 1;
+        }
+    }
+
+
+}
